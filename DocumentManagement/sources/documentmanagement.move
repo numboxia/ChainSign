@@ -121,7 +121,7 @@ module documentmanagement::documentmanagement {
         });
     }
 
-/*
+
     // Approve a document
     public entry fun approve_completed_document(
         store: &mut DocumentStore,
@@ -141,22 +141,19 @@ module documentmanagement::documentmanagement {
         // Add approver to approval history
         vector::push_back(&mut document.approval_history, approver);
 
-        let mut completed = false;
-
         // Handle next approver or complete the document
 
             document.status = 2; // Completed
-            completed = true;
 
         // Emit event for document approval
         event::emit(DocumentApprovedEvent {
             doc_id: document_id,
             approver,
-            next_approver,
-            completed,
+            next_approver: option::none(),
+            completed:true,
         });
     }
-*/
+
 
     // Utility function to get document status (for off-chain queries)
     public fun get_document_status(store: &DocumentStore, document_id: u64): u8 {
@@ -164,7 +161,7 @@ module documentmanagement::documentmanagement {
         document.status
     }
 
-    // Utility function to get document approval history (for off-chain queries)
+    // Utility functiostd::option:n to get document approval history (for off-chain queries)
     public fun get_approval_history(store: &DocumentStore, document_id: u64): &vector<address> {
         let document = table::borrow(&store.documents, document_id);
         &document.approval_history
