@@ -1,0 +1,14 @@
+npm install react-pdf
+
+npm install react-router-dom
+
+npm install @mysten/wallet-kit
+
+
+npm install @mysten/dapp-kit js-sha3 buffer
+
+npm install @aptos-labs/wallet-adapter-react
+
+npm install @aptos-labs/aptos-sdk
+
+npm install @mysten/sui.js @walrusxyz/walrus-js

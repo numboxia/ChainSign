@@ -1,0 +1,174 @@
+/* General Styling */
+body {
+    color: wheat;
+    font-family: Arial, sans-serif;
+}
+
+/* Title Styling */
+.header {
+    /* background-color: #4a90e2; */
+    color: wheat;
+    padding: 15px;
+    text-align: center;
+  }
+
+/* General Flexbox Layout for Horizontal Arrangement */
+.horizontal-layout {
+    display: flex;
+    justify-content: space-between; /* Space between left, center, and right sections */
+    align-items: flex-start; /* Align vertically at the top */
+    width: 100%;
+    padding: 20px;
+}
+
+/* Search Bar Container */
+/* .search-bar-container {
+    display: flex;
+    flex-direction: column; 
+    width: 25%;
+}
+
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+} */
+
+
+.people-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.people-list {
+  list-style: none;
+  padding: 0;
+}
+
+.people-item {
+  padding: 8px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.people-checkbox {
+  margin-right: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+
+
+
+  /*  */
+  .people-list {
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+  }
+  
+  .person-row {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .person-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .person-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .person-date {
+    font-size: 12px;
+    color: #6c757d;
+  }
+  
+  .person-icon {
+    font-size: 18px;
+  }
+  
+
+
+
+/* People List Styling */
+.people-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.people-item {
+    background-color: #f4f4f4;
+    color: black;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.people-item:hover {
+    background-color: #e0e0e0;
+}
+
+/* Upload Container (Centered) */
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 auto;  /* Prevent shrinking or growing */
+    margin: 0 20px;
+    padding: 50px;
+    background-color: gray;
+    width: 55%; 
+    padding: 300px 0px; /* Adjust padding for better spacing */
+}
+
+/* Upload Button Styling */
+.upload-button {
+  padding: 8px 20px;
+  background-color: #00abc2;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.upload-button:hover {
+  background-color: #088296;
+}
+
+.upload-button:active {
+    background-color: black;
+}
+
+/* Right Side Empty Space */
+.rightspace {
+    width: 20%;  /* Takes up 20% of the width */
+    padding: 20px;
+}
